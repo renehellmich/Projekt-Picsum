@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --padding-global: 64px;
+    --width-img: calc((100vw - var(--padding-global) * 3) / 3);
+    --height-img: 0px;
+    --gap: 32px
+}
+body {
+    padding: 0px var(--padding-global);
+}
+h1 {
+    text-align: center;
+}
+#picsum {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--gap)
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: var(--width-img);
+    gap: calc(var(--gap) / 2)
+    /* height: var(--height-img); */
+}
+h2 {
+    margin: 0 auto;
+}
+button {
+    color: white;
+    background-color: rgb(216, 22, 223);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 6px 12px;
+    border: none
+    border-radius: 4px;
+}
