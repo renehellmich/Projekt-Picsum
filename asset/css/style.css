@@ -10,10 +10,11 @@
     --gap: 32px
 }
 body {
-    padding: 0px var(--padding-global);
+    padding: 32px var(--padding-global);
 }
 h1 {
     text-align: center;
+    margin-bottom: 32px
 }
 #picsum {
     display: flex;
@@ -32,6 +33,9 @@ div {
     gap: calc(var(--gap) / 2)
     /* height: var(--height-img); */
 }
+img {
+    border-radius: 8px;
+}
 h2 {
     margin: 0 auto;
 }
@@ -41,6 +45,6 @@ button {
     width: fit-content;
     margin: 0 auto;
     padding: 6px 12px;
-    border: none
+    border: none;
     border-radius: 4px;
 }
